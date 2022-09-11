@@ -1,0 +1,36 @@
+/* projects */
+@media (min-width: 700px) {
+  .projects_container {grid-template-columns: 1fr;}
+}
+@media (min-width: 1100px) {
+  .projects_container {grid-template-columns: repeat(2,1fr);}
+}
+@media (min-width: 1640px) {
+  .projects_container {grid-template-columns: repeat(3,1fr);}
+}
+
+
+
+#projects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:20px;
+  
+}
+
+div.projectsHeader h1 {
+  font-size: 3rem;
+  color: #fff2e1;
+ 
+}
+
+div.projects_container {
+  color: #fff2e1;
+  width: 85vw;
+  padding-bottom: 50px;
+  display: grid;
+}
+
+/* end of projects */

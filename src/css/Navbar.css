@@ -1,0 +1,33 @@
+/* navbar */
+.navbar {
+  position: fixed;
+  bottom: 10%;
+  right: 0;
+  padding-right: 2.5%;
+  background-color: transparent;
+}
+
+.navbar ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  font-size: 1.5rem;
+  color: #add8e6;
+  background-color: inherit;
+}
+
+.navlink {
+  color: #add8e6;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  background-color: inherit;
+}
+.navlink:visited {
+  color: inherit;
+}
+.navlink:hover {
+  color: #faa0a0;
+}
+/* end of navbar */

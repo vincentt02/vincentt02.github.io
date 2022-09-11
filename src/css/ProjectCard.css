@@ -1,0 +1,65 @@
+/* projectCard */
+div.project {
+  width: 480px;
+  height: 380px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 242.25px 1fr;
+  grid-template-areas: "title"
+  "picture"
+  "description";
+  gap: 5px;
+  justify-self: center;
+  align-self: center;
+}
+
+div.project .title {
+  font-size: 2rem;
+  color: #fff2e1;
+  grid-area: title;
+  justify-self: center;
+  align-self: center;
+}
+
+
+div.projectPicture {
+  width: 480px;
+  height: 242.25px;
+  grid-area: picture;
+}
+
+div.projectPicture img {
+  height: 100%;
+  width: 100%;
+  opacity: .7;
+}
+
+div.projectBottom {
+  grid-area: description;
+  display: flex;
+  justify-content: space-between;
+  color: #b392ac;
+}
+
+div.description_container {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.icons {
+  justify-self: center;
+  align-self: center;
+  display:flex;
+  gap: 5px;
+}
+
+div.icons .websiteIcon, .githubIcon  {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+
+
+/* end of projectCard */

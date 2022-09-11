@@ -1,0 +1,89 @@
+/* about */
+#about {
+  height: 70vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.aboutmeRightside {
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 680px;
+}
+
+div.about_container {
+ 
+  height: 60%;
+
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 20% 1fr;
+
+  grid-template-areas:
+    "aboutme"
+    "skillsHeader"
+    "skills";
+  color: #b392ac;
+  font-size: 1.5rem;
+}
+
+div.aboutmeHeader h1 {
+  font-size: 3rem;
+  color: #fff2e1;
+
+}
+
+div.aboutme {
+  grid-area: aboutme;
+}
+
+div.skillsTitle {
+  grid-area: skillsHeader;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+
+}
+
+div.skills {
+  grid-area: skills;
+}
+
+div.skills ul {
+  list-style: none;
+  display: grid;
+  row-gap: 20px;
+  column-gap: 20px;
+  width: 50%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+div.skills ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+div.picture {
+  width: 240px;
+  height: 240px;
+}
+
+div.picture img {
+  width: 240px;
+  height: 240px;
+}
+
+div.picture .email {
+  text-align: center;
+  color: #fff2e1;
+  font-size: 1.1rem;
+}
+
+/* end of about */
